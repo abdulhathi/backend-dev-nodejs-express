@@ -32,7 +32,12 @@
 - [ ] To listen the event we need to create listener function
 - [ ] Using eventEmitter object to call the 'on' method.
 - [ ] pass the callback function for listen the event.
-#### 11. Extending Event Emitter
+#### 11. Event arguments
+- [ ] passing the arugments to the event
+- [ ] Pass it like either seperated or object
+- [ ] Receive the argument value when register listener
+- [ ] And print argument values on the console
+#### 12. Extending Event Emitter
 - [ ] Create custom Logger class
 - [ ] extends(inherit) the EventEmitter class in to Logger class
 - [ ] create a log method
@@ -41,7 +46,7 @@
 - [ ] Import in another module.
 - [ ] Create an object for the imported logger calls
 - [ ] And call the log function and before listen the emitter.
-#### 12. HTTP Module
+#### 13. HTTP Module
 - [ ] Import http module to create a new http object
 - [ ] Create the server using http
 - [ ] http.listen method to set the port
