@@ -124,5 +124,13 @@
 #### 3. Introducing Express
 - [ ]  npm i express to install express
 #### 4. Building your first node js application 
-- [ ] create object using the imported express
+- [ ] create app object using the imported express
 - [ ] create two routes '/' and '/api/courses'
+#### 5. Install nodemon
+- [ ] install nodemon package globally
+- [ ] run the application using nodemon index.js
+#### 6. Environment variables
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
