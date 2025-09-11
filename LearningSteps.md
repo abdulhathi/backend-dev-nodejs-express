@@ -58,8 +58,71 @@
 - [ ] Based on the different route ('/', '/api/course') in req param url 
 - [ ] Write the different response.
 - [ ] Write Json reponse for the course route.
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+
+
+
+## Node Package Manager(NPM)
+#### 4. Using a package
+- [ ] install 'underscore' pacakge using bun or npm
+- [ ] verify a number contains inside the array of nums
+#### 5. Package dependencies
+- [ ] Install mangoose package
+#### 6. NPM packages and source control
+- [ ] 'npm i' (or) 'npm install' to install node modules
+- [ ] 'git init' to initate the git
+- [ ] .gitignore file to ignore the node_modules/ folder
+- [ ] 'git status -s' to check the current status
+- [ ] "git commit -m '[comment]'" to commit the pending fiels
+#### 7. Symantic versioning
+- [ ] "^4.8.3" if any package version like with carret
+- [ ] This is call symantic versioning
+- [ ] "^MajonVersion.MinorVersion.PatchVersion"
+- [ ] if the carret or tilde is there then npm install
+- [ ] Will update minorversion and patchversion
+- [ ] Not the MajorVersion
+#### 8. Listing the installed packages
+- [ ] using 'npm list' command to see the list of packges
+- [ ] This command to we can see dependencies inside tree structure
+- [ ] 'npm list --depth=0' only show the dependencies in package
+#### 9. Viewing the registary info for the pacakge
+- [ ] 'npm view mangoose' all properties for the mangoose
+- [ ] 'npm view mangoose dependencies' to view only deps
+- [ ] 'npm view mangoose versions' to view all versions
+#### 10. Install specific version of the package 
+- [ ] 'npm i mangoose@2.4.2' to set the version
+#### 11. Updating the local packages 
+- [ ] 'npm outdated' command will show current, wanted and major rlease version
+- [ ] 'npm update' command will update the wanted version
+- [ ] 'sudo npm i -g npm-check-updates' will install below package
+- [ ] npm-check-updates(ncu)
+- [ ] 'ncu -u' or 'npm-check-updates' command will change the major package version in package.json
+- [ ] And then if you run the command 'npm i' will install the major version
+#### 12. Dev dependencies
+- [ ] 'npm -i jshint --save-dev' command to we can install dev dependencies packages
+#### 13. Uninstall packages
+- [ ] 'npm un [package_name]' or 'npm uninstall [p_name]'
+- [ ] Using the above command to we can uninstall packages.
+#### 14. Working on global packages
+- [ ] 'npm i -g npm' to install global npm package
+- [ ] 'npm -g outdated' to check all outdated packages globaly.
+- [ ] 'npm un -g [package_name]' to we can uninstall package
+#### 15. Publishing the packages.
+- [ ] Create a npm init and add index.js
+- [ ] Module.export.add = function(a,b) { return a+b; }
+- [ ] 'npm login' to login with creds
+- [ ] 'npm publish' to publish package
+- [ ] Create a new project using npm init
+- [ ] npm i command to install the custom package
+- [ ] and import useing the require 
+- [ ] And use the function inside
+#### 16. Updating the packages 
+- [ ] Adding one more module.exports.multiply = function(a,b) { return a*b }
+- [ ] 'npm version major' or 'npm version minor' or 'npm version patch' to update the latest version
+- [ ] And then npm pushlish to publish the updated package
+
+## Building RESTFul APIs Using Express
+#### 3. Introducing Express
+- [ ]  npm i express to install express
+#### 4. Building your first node js application 
+- [ ] create object using the imported express
+- [ ] create two routes '/' and '/api/courses'
