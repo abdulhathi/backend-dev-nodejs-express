@@ -130,7 +130,20 @@
 - [ ] install nodemon package globally
 - [ ] run the application using nodemon index.js
 #### 6. Environment variables
+- [ ] 'export PORT=5000' to setup the port
+- [ ] process.env.PORT to use the port form env var
+#### 7. Route parameter 
+- [ ] setting the route path with ':id' or ':name'
+- [ ] Inorder to read the param using req.params.id
+- [ ] if route path like '/api/courses/:id/:name'
+- [ ] using req.params object we read all the params.
+- [ ] Pass the query stirng '/api/courses/id?sortBy=name&filterBy=abdul
+- [ ] req.query will return the object of all query stirngs
+#### 7. 
 - [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
+- [ ] 
+- [ ] 
+  
