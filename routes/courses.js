@@ -7,7 +7,9 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(logger)
-app.use(morgan('tiny'))
+
+console.log(process.env.NODE_ENV)
+if (app.get('env') === 'development') app.use(morgan('tiny'))
 
 const courses = [
   { id: 1, name: 'Asp.net' },
