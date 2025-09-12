@@ -139,11 +139,51 @@
 - [ ] using req.params object we read all the params.
 - [ ] Pass the query stirng '/api/courses/id?sortBy=name&filterBy=abdul
 - [ ] req.query will return the object of all query stirngs
-#### 7. 
+#### 8. Handling HTTP GET request
+- [ ] Define a courses object index.js file
+- [ ] Create route with the :id param
+- [ ] Find the course by id. 
+- [ ] If course not found return (404)
+- [ ] Else return the object
+#### 9. Handling HTTP POST request
+- [ ] Create a new route with app.post('/api/course')
+- [ ] create a new object course.
+- [ ] Use the req.body.name in the course object.
+- [ ] Use the JSON middleware in express like below
+- [ ] app.use(express.json())
+- [ ] Push the course object inside courses
+- [ ] Response to send the course object.
+#### 10. Calling the endpoints using postman 
+#### 11. Input validation
+- [ ] Validate name using the Joi pacakge
+- [ ] Create validation schema object using joi
+- [ ] using joi validation schema object validate the request
+- [ ] Send the result error to response using 400
+#### 12. Handling http put request
+- [ ] Lookup the course by :id route param
+- [ ] If the course not return 404 (object not found)
+- [ ] if exist and validate request body
+- [ ] if invalid req return 400 (Bad request)
+- [ ] Otherwise update the courses
+- [ ] Return the course object
+- [ ] Create seperate function for reuse the validate
+#### 13. Handling HTTP delete request
+- [ ] Lookup the course by :id route param
+- [ ] If the course not return 404 (object not found)
+- [ ] if exist find the index of the course
+- [ ] And splice method to delete
+- [ ] Finally return the deleted course
+#### 13. Practice an simple application
+- [ ] Create all CRUD operation
+- [ ] Create, Read, Update and Delete
+
+## Express : Advanced topics
+#### 1. Introduction
+- [ ] Middleware, Configuration, Debugging, Template Engines
+#### 2. Middleware
+- [ ] The middleware sits inbetween the request response flow
+- [ ] A middleware after done its job either it passes control to the next middler or the response object
+- [ ] We can create our own custom middleware for the below purposes
+- [ ] Login, Authentication, Authorization
 - [ ] 
 - [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-  
