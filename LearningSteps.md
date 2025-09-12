@@ -223,6 +223,22 @@
 - [ ] Using express.router() to create seperate router for courses
 - [ ] And use this router inside the index app
 #### 13. Project - restructure the app
-- [ ] 
+
+## Asynchronous Javascript
+#### 3. Callbacks
+- [ ] Create setTimout function 2 sec after to execute
+- [ ] Inside the function can call a callback function
+- [ ] And pass the id and username object
+- [ ] When calling the setTimout function we can pass the callback
+#### 4. Callback hell or Christmas tree problem
+#### 5. Named functions to rescue
+#### 6. Promises
+- [ ] create a new promise object with the param of call back fucntion
+- [ ] That call back function has two param result and reject
+- [ ] The result is an another call back function which call if the promise status is from pending to success status.
+- [ ] The reject is an another call back function which call if the promise status is from pending to rejected status.
+#### 7. Replacing callback with promises
+- [ ] use the promise object to have the resolve and reject
+- [ ] resolve each call functions
 - [ ] 
 - [ ] 
