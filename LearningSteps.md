@@ -220,6 +220,8 @@
 #### 10. Database integration 
 #### 11. Authentication
 #### 12. Structuring Express application
+- [ ] Using express.router() to create seperate router for courses
+- [ ] And use this router inside the index app
 #### 13. Project - restructure the app
 - [ ] 
 - [ ] 

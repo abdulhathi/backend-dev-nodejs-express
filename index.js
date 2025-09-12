@@ -4,6 +4,8 @@ const logger = require('./middlewares/logger')
 const morgan = require('morgan')
 const config = require('config')
 const pug = require('pug')
+const courseRouter = require('./routes/courses')
+const homeRouter = require('./routes/home')
 
 const app = express()
 app.use(express.json())
@@ -22,8 +24,8 @@ if (app.get('env') === 'development') {
 }
 if (app.get('env') === 'production') console.log(config.get('Customer.dbConfig'))
 
-app.get('/', (req, res) => {
-  res.render('index', { title: 'AbdulsNodeJS_Practice', message: 'Hi How are you ?' })
-})
+app.use('/api/courses', courseRouter)
+app.use('', homeRouter)
+
 
 app.listen(3021, () => console.log('Listening port 3021'))

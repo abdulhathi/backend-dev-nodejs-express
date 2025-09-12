@@ -1,4 +1,6 @@
+const express = require('express')
 
+const courseRoute = express.Router()
 
 const courses = [
   { id: 1, name: 'Asp.net' },
@@ -7,12 +9,12 @@ const courses = [
 ]
 
 //^ Get All courses
-app.get('/api/courses', (req, res) => {
+courseRoute.get('', (req, res) => {
   res.send(courses)
 })
 
 //^ Get Course by Id
-app.get('/api/courses/:id', (req, res) => {
+courseRoute.get('/:id', (req, res) => {
   console.log(req.params.id)
 
   const course = courses.find((course) => course.id === parseInt(req.params.id))
@@ -30,7 +32,7 @@ const validateCourse = (course) => {
 }
 
 //^ POST a course
-app.post('/api/courses/', (req, res) => {
+courseRoute.post('/', (req, res) => {
   const result = validateCourse(req.body)
 
   if (!result.success) return res.status(400).send(result.error.format())
@@ -40,7 +42,7 @@ app.post('/api/courses/', (req, res) => {
   res.send(course)
 })
 
-app.put('/api/courses/:id', (req, res) => {
+courseRoute.put('/:id', (req, res) => {
   const course = courses.find((course) => course.id === parseInt(req.params.id))
   if (!course) return res.status(404).send('The Course with the given id was not found.')
 
@@ -51,7 +53,7 @@ app.put('/api/courses/:id', (req, res) => {
   res.send(course)
 })
 
-app.delete('/api/courses/:id', (req, res) => {
+courseRoute.delete('/:id', (req, res) => {
   const course = courses.find((course) => course.id === parseInt(req.params.id))
   if (!course) return res.status(404).send('The Course with the given id was not found.')
 
@@ -59,3 +61,5 @@ app.delete('/api/courses/:id', (req, res) => {
   courses.splice(courseIndex, 1)
   res.send(course)
 })
+
+module.exports = courseRoute
