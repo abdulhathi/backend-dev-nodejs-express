@@ -3,11 +3,14 @@ const z = require('zod')
 const logger = require('./middlewares/logger')
 const morgan = require('morgan')
 const config = require('config')
+const pug = require('pug')
 
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(logger)
+app.set('view engine', 'pug')
+app.set('views', './views')
 
 // console.log(process.env.NODE_ENV)
 const app_name = config.get('app_name')
@@ -18,5 +21,9 @@ if (app.get('env') === 'development') {
   console.log(config.get('Customer.dbConfig'))
 }
 if (app.get('env') === 'production') console.log(config.get('Customer.dbConfig'))
+
+app.get('/', (req, res) => {
+  res.render('index', { title: 'AbdulsNodeJS_Practice', message: 'Hi How are you ?' })
+})
 
 app.listen(3021, () => console.log('Listening port 3021'))
