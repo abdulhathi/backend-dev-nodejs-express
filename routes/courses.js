@@ -1,12 +1,11 @@
 const express = require('express')
-const Joi = require('joi')
 const z = require('zod')
+const logger = require('../middlewares/logger')
 
 const app = express()
 app.use(express.json())
-app.use(express.urlencoded({extended: true}))
-
-app.listen(3020, () => console.log('Listening port 3020'))
+app.use(express.urlencoded({ extended: true }))
+app.use(logger)
 
 const courses = [
   { id: 1, name: 'Asp.net' },
@@ -63,7 +62,9 @@ app.delete('/api/courses/:id', (req, res) => {
   const course = courses.find((course) => course.id === parseInt(req.params.id))
   if (!course) return res.status(404).send('The Course with the given id was not found.')
 
-  const courseIndex = courses.findIndex(c => c === course)
+  const courseIndex = courses.findIndex((c) => c === course)
   courses.splice(courseIndex, 1)
   res.send(course)
 })
+
+app.listen(3021, () => console.log('Listening port 3021'))

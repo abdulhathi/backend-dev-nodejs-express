@@ -181,9 +181,46 @@
 #### 1. Introduction
 - [ ] Middleware, Configuration, Debugging, Template Engines
 #### 2. Middleware
-- [ ] The middleware sits inbetween the request response flow
+- [ ] The middleware sits inbetween the request response flow. Or it's should be on the request processing pipeline.
 - [ ] A middleware after done its job either it passes control to the next middler or the response object
 - [ ] We can create our own custom middleware for the below purposes
-- [ ] Login, Authentication, Authorization
+- [ ] Logging, Authentication, Authorization
+#### 3. Create custom middleware
+- [ ] Create logging middle using app.use function to pass a function and pass the controll to the next middleware
+- [ ] Create a middle function in seperate module
+- [ ] And export the module exports
+- [ ] Same create authentication middle ware
+#### 4. Built in middleware
+- [ ] express.urlencoded() middle ware create a payload from the url encoded params
+- [ ] And express.static() middle ware is used to server public content items in the server. whatever files in the public folder will be server from by the URL.
+#### 5. Third party middlewares
+- [ ] In express we can use the thirdpart supporting middlewares that mentioned in the express document
+- [ ] Ex:- Helment, morgan (logging middleware)
+#### 6. Environments (Development, Testing & Production) 
+- [ ] Set the 'NODE_ENV' value in environment variable
+- [ ] Get the value either using app.get('env')
+- [ ] Or using Process.env.NODE_ENV
+- [ ] Using this NODE_ENV value we can enables middleware (ex: Morgan logging).
+#### 7. Configuration
+- [ ] Install config package
+- [ ] Create a config folder and have development.json
+- [ ] Create a config file production.json
+- [ ] name and mail -> host config we can set it.
+- [ ] So we can have different config based on the NODE_ENV
+#### 8. Debugging
+#### 9. Template Engine
+- [ ] Pug, Mustache and EJS template view engine
+- [ ] Install Pug
+- [ ] app.set('view engine', 'pug')
+- [ ] app.set('view', './views')
+- [ ] create views folder inside create index.bug
+- [ ] Create the template in index.bug file
+- [ ] app.get create route '/' and request.render(index)
+- [ ] And pass the title and message values
+#### 10. Database integration 
+#### 11. Authentication
+#### 12. Structuring Express application
+#### 13. Project - restructure the app
+- [ ] 
 - [ ] 
 - [ ] 
