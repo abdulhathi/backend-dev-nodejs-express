@@ -1,15 +1,4 @@
-const express = require('express')
-const z = require('zod')
-const logger = require('../middlewares/logger')
-const morgan = require('morgan')
 
-const app = express()
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
-app.use(logger)
-
-console.log(process.env.NODE_ENV)
-if (app.get('env') === 'development') app.use(morgan('tiny'))
 
 const courses = [
   { id: 1, name: 'Asp.net' },
@@ -70,5 +59,3 @@ app.delete('/api/courses/:id', (req, res) => {
   courses.splice(courseIndex, 1)
   res.send(course)
 })
-
-app.listen(3021, () => console.log('Listening port 3021'))
