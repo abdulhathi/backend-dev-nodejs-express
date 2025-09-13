@@ -258,6 +258,18 @@
 - [ ] Create new course document using the course model object
 #### 8. Querying documents
 - [ ] using Course model to query the document.
+#### 9. Comparison operator
+- [ ] eq, ne, lt, lte, gt, gte, in, nin
+#### 10. logical query (or, and) 
+- [ ] .find().or()
+- [ ] .find().and()
+#### 11. Regular expression
+#### 12. Counting
+- [ ] .find().countDocument()
+#### 13. Pagination
 - [ ] 
+#### 14. Import json file
+- [ ] Import mongodb data from json file to new collection using the below command
+- [ ] mongoimport --db mongoexercise --collection courses --file exercise-data-json   
 - [ ] 
 - [ ] 
