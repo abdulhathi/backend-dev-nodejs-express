@@ -240,5 +240,10 @@
 #### 7. Replacing callback with promises
 - [ ] use the promise object to have the resolve and reject
 - [ ] resolve each call functions
+#### 8. Consuming promises
+- [ ] Call the getUser, getRepos, getCommits and displayCommits in the chaining method.
+- [ ] Using catch method to capture if any error in the promise.
+- [ ] 
+- [ ] 
 - [ ] 
 - [ ] 
