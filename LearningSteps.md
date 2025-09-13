@@ -243,6 +243,7 @@
 #### 8. Consuming promises
 - [ ] Call the getUser, getRepos, getCommits and displayCommits in the chaining method.
 - [ ] Using catch method to capture if any error in the promise.
+#### 9. Creating Settled Promises 
 - [ ] 
 - [ ] 
 - [ ] 
