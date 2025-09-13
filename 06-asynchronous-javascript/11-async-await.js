@@ -1,9 +1,17 @@
 console.log('Before')
-getUser(100)
-  .then((user) => getRepos(user.userName))
-  .then((repos) => getCommits(repos))
-  .then((commits) => displayCommits(commits))
-  .catch((error) => console.log(error))
+
+async function printCommits() {
+  try {
+    const user = await getUser(100)
+    const repos = await getRepos(user.userName)
+    const commits = await getCommits(repos)
+    displayCommits(commits)
+  } catch (error) {
+
+  }
+}
+
+printCommits()
 
 function displayCommits(commits) {
   setTimeout(() => {
