@@ -244,7 +244,20 @@
 - [ ] Call the getUser, getRepos, getCommits and displayCommits in the chaining method.
 - [ ] Using catch method to capture if any error in the promise.
 #### 9. Creating Settled Promises 
-- [ ] 
+
+
+## CRUD operation using mongodb
+#### 4. Connecting mongodb
+- [ ] npm i mongoose
+- [ ] connect mongoose using the url mongodb://localhost:27017/[database_name]
+#### 5. Schemas 
+- [ ] Create new schema using mongoose.Schema
+#### 6. Model
+- [ ] Create new Course model using mongoose.model('Course', courseSchema)
+#### 7. Create course document
+- [ ] Create new course document using the course model object
+#### 8. Querying documents
+- [ ] using Course model to query the document.
 - [ ] 
 - [ ] 
 - [ ] 
