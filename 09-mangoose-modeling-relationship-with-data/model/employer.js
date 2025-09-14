@@ -5,7 +5,7 @@ const Employer = mongoose.model(
   new mongoose.Schema({
     name: String,
     salary: Number,
-    department: { type: mongoose.Schema.Types.ObjectId, ref: 'Department' },
+    department: { type: mongoose.Schema.Types.ObjectId, ref: 'department' },
   })
 )
 
